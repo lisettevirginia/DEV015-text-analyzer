@@ -1,0 +1,88 @@
+/* Establecer un estilo base para el cuerpo de la página */
+body {
+  background-color: #D3D3D3;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  min-height: 100vh; /* Asegurar que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Establecer estilos para el contenedor principal */
+#container {
+  border: 1px solid #b994cf;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 600px; /* Establecer un ancho fijo para evitar cambios de tamaño */
+}
+
+/* Estilos para el encabezado */
+header {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Estilo base para la lista */
+ul {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+  justify-content: space-between; /* Espaciar los elementos uniformemente */
+  gap: 20px; /* Espacio entre los elementos */
+  width: 100%; /* Asegurar que la lista ocupe el 100% del contenedor */
+}
+
+/* Estilos para los elementos de la lista */
+.metrica {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 calc(33.33% - 40px); /* Ancho del 33.33% del contenedor menos el gap total */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho del elemento */
+  max-width: 180px; /* Establecer un ancho máximo para evitar que los elementos se extiendan demasiado */
+  text-align: left; /* Alinear el texto a la izquierda */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilos para el área de entrada de texto */
+textarea[name="user-input"] {
+  background-color: #BC8BC3;
+  height: 10em;
+  width: 100%;
+  margin: 10px 0; /* Ajustar margen para evitar el desplazamiento */
+  padding: 10px;
+  resize: none; /* Evitar redimensionamiento */
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin: 10px;
+  padding: 10px;
+  background-color: #D3D3D3;
+  width: 100%;
+  height: 40px;
+  color: black;
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+/* Estilos para el botón de restablecimiento */
+#reset-button {
+  background-color: #BC8BC3;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+}
