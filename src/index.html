@@ -8,30 +8,27 @@
 </head>
 
 <body>
-  <script src="index.js" type="module"></script>
-  <div class="container">
+  <div id="container">
     <header>
-      <strong>
-        <h1>Analizador de Texto</h1>
-      </strong>
+      <h1>Analizador de Texto</h1>
     </header>
 
     <ul>
-      <li class="lista">Caracteres:</li>
-      <li class="lista">Caracteres sin espacio:</li>
-      <li class="lista">Palabras:</li>
-      <li class="lista">Números:</li>
-      <li class="lista">Suma de Números:</li>
-      <li class="lista">Promedio Longitud:</li>
+      <li class="metrica" data-testid="character-count">Caracteres:</li>
+      <li class="metrica" data-testid="character-no-spaces-count">Caracteres sin espacio:</li>
+      <li class="metrica" data-testid="word-count">Palabras:</li>
+      <li class="metrica" data-testid="number-count">Números:</li>
+      <li class="metrica" data-testid="number-sum">Suma de Números:</li>
+      <li class="metrica" data-testid="word-length-average">Promedio Longitud:</li>
     </ul>
-    <textarea placeholder="Escriba algo aqui..." name="user-input"></textarea>
+    <textarea name="user-input" placeholder="Escriba algo aqui..."></textarea>
     <button id="reset-button">Limpiar Texto</button>
-  </div>
-</body>
-<footer>
-  <em>
-    <p>Lisette V. Piña M.</p>
-  </em>
-</footer>
+
+  <footer>
+   <p>Lisette V. Piña M.</p>
+  </footer>
 </div>
+<script type="module" src="analyzer.js"></script>
+<script type="module" src="index.js"></script>
+</body>
 </html>
